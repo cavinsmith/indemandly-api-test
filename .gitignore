@@ -1,0 +1,13 @@
+test*.js
+*.swp
+.idea
+.DS_STORE
+**/node_modules
+npm-debug.log
+package-lock.json
+yarn.lock
+**/build
+**/config/production.js
+**/config/development.js
+**/.nyc_output
+**/logs

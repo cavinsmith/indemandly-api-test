@@ -1,0 +1,7 @@
+{
+  "verbose": false,
+  "delay": "2000",
+  "ignore": ["logs", "node_modules"],
+  "exec": "babel-node",
+  "inspect": "./src/index.js"
+}

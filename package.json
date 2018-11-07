@@ -1,0 +1,43 @@
+{
+  "name": "indemandly-api-example",
+  "version": "0.0.1",
+  "description": "Indemandly API example",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --ignore ./logs ./src/index.js --exec babel-node",
+    "test": "npm run build && mocha --require source-map-support/register --timeout 10000",
+    "coverage": "npm run build && nyc mocha --require source-map-support/register --timeout 10000",
+    "lint": "eslint ./src",
+    "lintfix": "eslint --fix ./src",
+    "build": "npm run prepare-eslint && npm run prepare-clean && npm run prepare-babel",
+    "prepare-eslint": "eslint --quiet ./src",
+    "prepare-clean": "rm -rf ./build",
+    "prepare-babel": "babel ./src -d ./build"
+  },
+  "author": "Andrew G Kuznetsov (cav@cav.ru)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "config": "^2.0.1",
+    "get-random-quote": "^1.1.3",
+    "lodash": "^4.17.11",
+    "sleep-promise": "^8.0.1",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "source-map-support": "^0.5.9",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

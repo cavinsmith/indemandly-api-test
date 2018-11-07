@@ -1,0 +1,10 @@
+module.exports = {
+  endpoints: {
+    api: 'https://indemandly.knock.to',
+    apiPath: 'api/v1',
+  },
+  user: {
+    email: '***',
+    password: ''***',
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "sourceMaps": "both",
+  "plugins": ["transform-object-rest-spread"]
+}
