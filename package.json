@@ -12,7 +12,9 @@
     "build": "npm run prepare-eslint && npm run prepare-clean && npm run prepare-babel",
     "prepare-eslint": "eslint --quiet ./src",
     "prepare-clean": "rm -rf ./build",
-    "prepare-babel": "babel ./src -d ./build"
+    "prepare-babel": "babel ./src -d ./build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Andrew G Kuznetsov (cav@cav.ru)",
   "license": "UNLICENSED",
@@ -27,7 +29,8 @@
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1",
     "source-map-support": "^0.5.9",
-    "winston": "^2.4.2"
+    "winston": "^2.4.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -39,5 +42,6 @@
     "chai-http": "^4.2.0",
     "eslint": "^5.8.0",
     "eslint-plugin-import": "^2.14.0"
-  }
+  },
+  "snyk": true
 }
