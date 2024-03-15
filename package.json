@@ -18,7 +18,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "app-module-path": "^2.2.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "config": "^2.0.1",
     "get-random-quote": "^1.1.3",
